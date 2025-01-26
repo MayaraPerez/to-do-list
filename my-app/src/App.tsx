@@ -8,17 +8,20 @@ function App() {
   const [task, setTask] = useState<string>("") 
   const [todoList, setTodoList] = useState <Itask[]>([])
 
+
   function AddListTask(): void {
 
     if(task != "") {
       const idRandom = (num:number) => (Math.floor(Math.random() * num))
-
+      
       const newList = {id: idRandom(100), name: task }
 
       setTodoList([...todoList, newList])
+      setTask("")
     }
 
   }
+
 
   function DeleteTask (deleteTaskId: number): void {
     setTodoList(todoList.filter((name) => name.id !== deleteTaskId))
@@ -28,7 +31,7 @@ function App() {
     <div className='App'>
 
       <header>
-          <h2>Lists</h2>
+          <h2>My to-do List</h2>
 
           <input 
             type="text" autoComplete='off' 

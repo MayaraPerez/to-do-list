@@ -1,11 +1,11 @@
 .App {
     padding: 20px 0;
-    width: 100%;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    border: 5px navy;
+
 }
 
 header h2 {
@@ -23,7 +23,7 @@ input {
     margin-bottom: 25px;
     padding-left: 20px;
 
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.274);
     border-radius: 10px;
 }
 
@@ -39,7 +39,7 @@ input {
 }
 
 .btn-header {
-    background-color:dodgerblue;
+    background-color:navy;
     font-size: 16px;
     font-weight: 700;
     margin-left: 5px;
@@ -47,6 +47,8 @@ input {
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.267);
+
 }
 
 
